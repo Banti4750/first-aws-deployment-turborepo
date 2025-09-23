@@ -2,13 +2,17 @@ import express from 'express';
 import { client } from '@repo/db/client'
 const app = express();
 
+
+app.use(express.json());
+
 app.get('/', (req, res) => {
     res.send("Hi Banti")
 })
 
-app.post('signup', async (req, res) => {
-    const { email, password } = req.body;
-
+app.post('/signup', async (req, res) => {
+    const email = req.body.email;
+    const password = req.body.password;
+    console.log(email)
     try {
         await client.user.create({
             data: {
@@ -25,6 +29,6 @@ app.post('signup', async (req, res) => {
     }
 })
 
-app.listen(3000, () => {
-    console.log("server is running on port 3000")
+app.listen(3002, () => {
+    console.log("server is running on port 3002")
 })
