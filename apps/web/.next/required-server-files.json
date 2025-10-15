@@ -98,7 +98,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "X:\\Devops\\first-aws-deployment-turborepo",
+    "outputFileTracingRoot": "X:\\Devops\\test\\first-aws-deployment-turborepo",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -287,10 +287,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js",
     "turbopack": {
-      "root": "X:\\Devops\\first-aws-deployment-turborepo"
+      "root": "X:\\Devops\\test\\first-aws-deployment-turborepo"
     }
   },
-  "appDir": "X:\\Devops\\first-aws-deployment-turborepo\\apps\\web",
+  "appDir": "X:\\Devops\\test\\first-aws-deployment-turborepo\\apps\\web",
   "relativeAppDir": "apps\\web",
   "files": [
     ".next\\routes-manifest.json",
